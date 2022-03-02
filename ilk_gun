@@ -1,0 +1,183 @@
+Console.ReadKey();
+//string metinsel ifadeler boyut olarak içerisine sınırsız karakter alabiliyor
+//sytnax değişken tanımlamada veritipi veriadını yazmamız gerekiyor.
+//"" ile arasına yazılan veriler string verilerdir.
+//console.readline kullanıcının klavyeden girdiği veriyi hafızada tutuyordu.
+//Atama yaparken sağdaki ifade soldakine atanır.
+//İlk Örnek: Hoca string ad=Console.ReadLine(); gibi her değişkeni tek tek tanımlamak yerine ilk başta hepsini tanımlayıp ilerliyor.
+string ad;
+Console.WriteLine("Adınızı Giriniz : ");
+ad = Console.ReadLine();
+Console.WriteLine("Merhaba " + ad);
+Console.ReadKey();
+//~~~~~~~~~~~~Şöyle de olur yani.~~~~~~~~~~~~~~~
+Console.WriteLine("Lütfen Adınızı Giriniz...");
+string ad=Console.ReadLine();
+Console.WriteLine("Merhaba" + ad);
+Console.ReadKey();
+
+
+//İkinci Örnek:
+string ad,soyad;
+Console.WriteLine("Adınız Nedir?");
+ad=Console.ReadLine();
+Console.WriteLine("Soyadınız Nedir?");
+soyad=Console.ReadLine();
+Console.WriteLine("Hoş Geldin" +" "+ ad +" "+ soyad);
+Console.ReadKey();
+//readkey , kullanmayınca da çalışır.
+// Dediğimiz gibi string ad=Console.ReadLine(); ve soyad=Console.ReadLİne(); yazabilirsin.
+
+
+
+// Üçüncü Örnek:
+int sayi1,sayi2,toplam;
+Console.WriteLine("Lütfen birinci tamsayıyı giriniz.");
+sayi1=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Lütfen ikinci tamsayıyı giriniz");
+sayi2=Convert.ToInt32(Console.ReadLine());
+toplam=sayi1+sayi2;
+Console.WriteLine(sayi1 + "+" + sayi2 + "=" + toplam + " ");
+Console.ReadKey();
+
+
+// int ifade direkt ekrana yazılamaz. Çünkü kullanıcı string değer verir. Biz bunu int'a çevirmeye yükümlüyüz.
+// toplam.ToString() bu ifade string ifadedir.
+// toplam+" " string bir ifade olarak sonucu yazdırıyor.
+//?????
+//int sayi = 5;
+//Console.WriteLine(sayi.ToString());
+//direkt yazdırmak istediğim ToString. Bu ifade bir string ifadeymiş gibi gösteriyorum.
+//Console.WriteLine(" " + sayi);
+//otomatiktan program sayiyida string ifade olarak görüyor.
+
+
+
+
+//Dördüncü Örnek: Convert.ToDouble olması ve Console.WriteLine(sonuc.ToString()) önemli.
+double deger,sonuc;
+Console.WriteLine("Lütfen Bir Sayı Değeri Giriniz");
+deger=Convert.ToDouble(Console.ReaadLine());
+sonuc=(deger*18)/100;
+Console.WriteLine("İşlem Sonucu: " + sonuc);
+Console.ReadKey();
+
+
+
+//Beşinci Örnek: Console.WriteLine("Çevre: "+cevre); Console.WriteLine("Alan: "+ alan);   ikisini bir arada değil alt alta yazmak istersen yazabiliriz.
+int kisa_kenar,uzun_kenar,alan,cevre;
+Console.WriteLine("Dikdörtgenin Kısa Kenarını Giriniz. ");
+kisa_kenar=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Dikdörtgenin Uzun Kenarını Giriniz.");
+uzun_kenar=Convert.ToInt32(Console.ReadLine());
+alan=(kisa_kenar*uzun_kenar);
+cevre=2*(kisa_kenar+uzun_kenar);
+Console.WriteLine("Alan: "+alan +" "+"Çevre: "+cevre);
+Console.ReadKey();
+
+
+
+//(İf Else) Karar Yapıları:
+//Bazı durumların,değişkenlerin,olayların olup olmadığını kontrol etmek için gereklidir.
+// == sağdaki ifade soldaki ifadeye eşit ise anlamına gelecektir.
+// != sağdaki ifade soldaki ifadeye eşit değil ise anlamına gelecektir.
+// > büyük ise 
+// < küçük ise
+// >= büyük ve eşit ise
+// <= küçük ve eşit se 
+//birden fazla kontrol etmemiz gereken veri var ise
+// && (ve) oparatörünü   
+// her iki ya da  daha fazla koşul sağlanıyor ise || (veya) oparetörünü kullanıyoruz. Her iki ya da daha fazla koşuldan sadece biri sağlanıyor .
+
+//sytnax bakalım  if (koşullarımızı yazıyoruz )
+//                             { yapılacak işlemleri  } 
+//                else { yapılacak işlemleri  }
+//if,else if ,else   kenarlarında bir işaret yok. : ; gibi sadeler.
+
+
+
+int sayi=9;
+if (sayi==5)
+{
+  Console.WriteLine("Sayı değişkeni 5'dir.");
+}
+else
+{
+  Console.WriteLine("Sayı değişkeni 5 değildir.");
+}
+Console.ReadKey();
+
+
+//Altıncı Örnek:
+int deger;
+Console.WriteLine("Bana bir değer ver, sana onun rakam mı yoksa sayı mı olduğunu söyleyeyim.");
+Console.WriteLine("Lütfen bir adet sayı giriniz");
+deger=Convert.ToInt32(Console.ReadLine());
+ if(deger>=0  && deger<=9)
+{
+ Console.WriteLine("Bu değer bir rakamdır.");
+}
+else
+{
+ Console.WriteLine("Bu değer bir sayıdır.");
+}
+//Console.ReadKey();
+
+
+//YEDDİNCİ Örnek:   Hoca vize final ve ortalamayı double aldı. Ben bellek yönetimi için int ve double karışımı aldım.
+int vize,final;
+double ortalama;
+Console.WriteLine("Ders Başarı Durumu Uygulaması");
+Console.WriteLine("Vize notunuzu giriniz: ");
+vize=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Final notunuzu giriniz: ");
+final=Convert.ToInt32(Console.ReadLine());
+ortalama=(vize*40)/100 + (final*60)/100;
+    
+if(ortalama>50)
+{
+ Console.WriteLine("Başarılı");
+}
+else if(ortalama<=50)
+{
+ Console.WriteLine("Başarısız");
+}
+Console.ReadKey();
+
+
+//Sekizinci Örnek: 
+//sayi%2 0 mı değil mi kontrol int. Mod.
+
+Console.WriteLine("Girilen bir sayının tek mi yoksa çift mi olduğunu bulan uygulama");
+Console.WriteLine("Bir sayı giriniz.");
+deger=Convert.ToInt32(Console.ReadLine());
+
+if(deger%2==0)
+{
+ Console.WriteLine("Bu sayı çifttir.");
+}
+else
+{
+ Console.WriteLine("Bu sayı tektir.");
+}
+//Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
