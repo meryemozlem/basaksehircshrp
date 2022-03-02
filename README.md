@@ -1,4 +1,4 @@
-# basaksehircshrp
+basaksehircshrp
 Başakşehir C#
 #Tüm Örnekler.
 
