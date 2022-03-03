@@ -1,9 +1,20 @@
 Console.ReadKey();
+//   Program saniyeler içinde kapanmasın. Siyah ekran saniyede kaybolmasın.Program ayakta dursun diye dahil edilir. Bu kod parçasının ekledikten sonra program biz ne zaman istersek o zman kapanır.
 //string metinsel ifadeler boyut olarak içerisine sınırsız karakter alabiliyor
 //sytnax değişken tanımlamada veritipi veriadını yazmamız gerekiyor.
 //"" ile arasına yazılan veriler string verilerdir.
 //console.readline kullanıcının klavyeden girdiği veriyi hafızada tutuyordu.
 //Atama yaparken sağdaki ifade soldakine atanır.
+
+// Mesajdan sonra kullanıcıdan bir değer girmesi beklenir.Cevabı ise ad değişkenine eklenir,atanır.
+   string ad;
+   Console.WriteLine("Lütfen adınızı giriniz");
+   ad=Console.ReadLine();
+   Console.WriteLine("Merhaba" + ad);
+   Console.ReadKey();
+
+
+
 //İlk Örnek: Hoca string ad=Console.ReadLine(); gibi her değişkeni tek tek tanımlamak yerine ilk başta hepsini tanımlayıp ilerliyor.
 string ad;
 Console.WriteLine("Adınızı Giriniz : ");
