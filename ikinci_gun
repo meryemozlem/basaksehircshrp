@@ -1,0 +1,159 @@
+//Örnek 1:  Kullıcıdan ad ve şifre girmesini iste. İf Else ile bizim girdiğimiz değerleri girerse giriş başarılı olsun. Değilse hata versin.
+//sifre hem int hem de string yazılabilir. int yazarsam " " sifre bu içinde olmaz ve readline ı yeniden yapılandırırım. string içinde ise hem harf hem de rakam verebilirim. ama if de " " içinde yazarım.
+    string ad,sifre;
+    Console.WriteLine("Merhaba! Lütfen Kullanıcı Adını ve Şifren ile Sisteme Giriş Yap.");
+    Console.WriteLine("Kullanıcı adını giriniz: ");
+    ad=Console.ReadLine();
+    Console.WriteLine("Şifrenizi giriniz: ");
+    //sifre=Convert.ToInt32(Console.ReadLine());
+    sifre=Console.ReadLine();
+    if (ad=="Meryem" && sifre=="19375")
+    {
+      Console.WriteLine("Sisteme başarılı bir şekilde giriş yaptınız.");
+    }
+
+    else
+    {
+      Console.WriteLine("Sisteme giriş başarısız. Kuklanıxı adı veya şifre hatalıdır. Lütfen tekrar deneyinix.");
+    }
+    Console.ReadKey();
+    
+    
+    
+    //Örnek 2: Kullanıcıdan ödeyeceği tutarı iste eğer 150 tl ve üzeri ise o tutarı ödesin. 150 tl ve altı ise 15 tl kargo parası eklensin.
+    double toplamTutar;
+    Console.WriteLine("Aydoğan Ticarete Hoşgeldiniz. Keyifli alışverişler dileriz.");
+    Console.WriteLine("Yaptığınız alışveriş tutarını giriniz: ");
+    toplamTutar=Convert.ToDouble(Console.ReadLine());
+
+    if(toplamTutar >= 150)
+    {
+      Console.WriteLine("Kargo Parası ödemene gerk yok.Ödeyeceğin tutar: " + toplamTutar);
+    }
+
+    else
+    {
+      Console.WriteLine("Kargo Parası eklendiğinde Ödeyeceğin tutar: " + (toplamTutar+15));
+    }
+    Console.ReadKey();
+    
+    
+    
+    //Örnek 3: Hesap makinesi yapalımmm.
+    
+    double sayi1,sayi2,sonuc=0;
+    string islem;
+    Console.WriteLine("Birinci sayıyı giriniz: ");
+    sayi1=Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("İkinci sayıyı giriniz: ");
+    sayi2=Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Hesap makinesinde yapmak istediğiniz işlem nedir? Seçin. toplama=+ cikartma=- carpma=* bolme=/");
+    islem=Console.ReadLine();
+    if(islem=="+")
+    {
+      sonuc=sayi1+sayi2;                  
+    }
+    else if(islem=="-")
+    {
+      sonuc=sayi1-sayi2;
+    }
+    else if(islem=="*")
+    {
+      sonuc=sayi1*sayi2;
+    }
+
+    else if(islem=="/")
+    {
+      sonuc=sayi1/sayi2;
+    }
+    else
+    {
+      Console.WriteLine("Yanlış bir tuşa bastınız.");
+    }
+
+    Console.WriteLine("İşlem sonucu: " + sonuc);
+    Console.ReadKey();
+    
+    
+    
+    //Örnek4 : Ödemen gereken mtv tutatı hesaplama.
+    
+    string aractipi;
+  int motorhacmi, toplammiktar = 0;
+  Console.WriteLine("Araç tipi Seçiniz Ticari ise T değil ise TO giriniz");
+  aractipi = Console.ReadLine();
+  Console.WriteLine("Motor Hacmini Giriniz ");
+  motorhacmi = Convert.ToInt32(Console.ReadLine());
+  if (aractipi=="T")
+  {
+    if (motorhacmi>=1000 && motorhacmi<=1500)
+      {
+        toplammiktar = 1500;
+      }
+else if (motorhacmi>1500)
+{
+  toplammiktar = 2500;
+}
+  }
+else if (aractipi=="TO")
+{
+  if (motorhacmi >= 1000 && motorhacmi <= 1500)
+    {
+      toplammiktar = 750;
+    }
+else if (motorhacmi > 1500)
+   {
+    toplammiktar = 1250;
+   }
+}
+else
+{
+  Console.WriteLine("Hatalı Tuşlama");
+}
+Console.WriteLine("Toplam Ödemeniz gereken Mtv Tutarı = " + toplammiktar);
+Console.ReadKey();
+
+
+
+//Switch Case:
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
