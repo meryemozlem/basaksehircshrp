@@ -1,0 +1,18 @@
+// Örnek 1 : Kullanıcıdan bir değer girmesini iste ve bunun faktöriyelini bul.
+//6!=6*5*4*3*2*1
+//99 ve 100 faktöriyeli hesaplayamadı makine programı.
+
+    int sayi, carpim=1 ;
+    Console.WriteLine("Bir sayı gir , faktöriyelini hesaplayayım.");
+    sayi=Convert.ToInt32(Console.ReadLine());
+    for(int i=1; i<=sayi; i++)
+    {
+      carpim*=i;
+      //carpim=carpim*i;
+    }
+    Console.WriteLine("Sayının faktöriyeli=" + carpim);
+    Console.ReadKey();
+    
+    
+//Örnek 2 : Kulllanıcıdan 5 adet sayı girmesini iste.Bu sayıların çarpımını bulan programı yaz.
+
