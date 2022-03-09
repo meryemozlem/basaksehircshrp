@@ -236,7 +236,7 @@ for (; ;)
     int toplam=0 ;
     for(int i=0; i<5; i++)
     {
-      //Console.WriteLine("{0} . Sayıyı Giriniz : ",i+1); ? 
+      //Console.WriteLine("{0} . Sayıyı Giriniz : ",i+1); ? i'yi bir artırıp yazıyor. i+1 o. Sayılar 0 1 2 3 4 ama i+1 dediğimiiz için ekrana 1 2 3 4 5 olarak çıkarlar. 
       Console.WriteLine(i + ".Sayıyı Giriniz : ");
       toplam=toplam + Convert.ToInt32(Console.ReadLine());
       
