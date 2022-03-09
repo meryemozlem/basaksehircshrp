@@ -190,44 +190,56 @@ syntax
     Console.ReadKey();
     
     
-//Döngüler:
+//Döngüler for ,while, do while, foreach. Tekrar eden işlemleri yapmak için kullanmaktayız.
+//FOR: başlangıç ve bitiş değerleri biliniyorsa for kullanılır.
+//syntax: for ( başlangıç değeri ; bitiş değeri ; artış miktarı )
+//        { yapılacak işlemleri belirtiyoruz ..}
+          
+
+//Örnek 8 : 
+//For döngüsü ile 0 dan 5 e kadar yazdır.
+
+for(int i=0; i<6; i++)
+    {
+      //Console.WriteLine(i.ToString());
+      Console.WriteLine(i);
+    } 
+    Console.ReadKey();
+//Rakamları iki kere yazdırır. 001122334455 gibi.
+for(int i=0; i<6; i++)
+    {
+    Console.WriteLine(i.ToString());
+    Console.WriteLine(" " +i);
+    }
+ Console.ReadKey();
+ //Örnek 9 : Azalarak giden for döngüsü.
+ 
+ for(int i=9; i>3; i--)
+    {
+      Console.WriteLine(i);
+    } 
+    Console.ReadKey();
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
+//For döngüsü sonusz döngüye girer.
+for (; ;)
+ {
+   Console.WriteLine("Helloworld");
+ }
+ 
+ // Örnek 10:
+ // İster cw.(); {0}. yı seç istersen de altına yazanı.
+ //toplam=toplam+Convert.ToInt32(Console.ReadLine()) ile toplam+=Convert.ToInt32(Console.ReadLine()) aynıdır.
+ 
+ 
+    int toplam=0 ;
+    for(int i=0; i<5; i++)
+    {
+      Console.WriteLine("{0} . Sayıyı Giriniz : ",i+1);
+      //Console.WriteLine(i + "Sayıyı Giriniz : ");
+      toplam=toplam + Convert.ToInt32(Console.ReadLine());
+      
+    }
+    Console.WriteLine("Toplama işlem sonucu:" + toplam);
+    Console.ReadKey();
